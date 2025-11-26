@@ -74,7 +74,7 @@
         <main>
             <!-- ファイルアップロードセクション -->
             <section class="upload-section">
-                <h2>📁 音声ファイルアップロード</h2>
+                <h2>📁 音声/テキストファイルアップロード</h2>
                 <div id="drop-area" class="upload-area">
                     <input type="file" id="file-input" accept=".mp3,.mp4,.txt,.vtt" style="display: none;">
                     <div class="upload-content">
@@ -147,6 +147,14 @@
                         <button id="download-sentiment" class="download-btn" disabled>感情分析</button>
                     </div>
                 </div>
+            </section>
+
+            <!-- 注意書きセクション -->
+            <section class="notice-section">
+                <h2>⚠ 注意事項</h2>
+                <p>感情分析の出力結果は、入力ファイルの形式によって異なります。</p>
+                <p>＞テキストファイル（TXT、VTTなど）：行ごとの分析を行います。</p>
+                <p>＞音声ファイル（MP3、MP4など）：会議全体をまとめて分析します。</p>
             </section>
         </main>
     </div>
